@@ -1,4 +1,10 @@
 head{
-    font: size 30px;
-    color:red 
+    font-size: 30px;
+    color:red ;
+}
+h1{
+    color:blue;
+    font-size:20px;
+    text-align:center;
+    font-style:italic;
 }
