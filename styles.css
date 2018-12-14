@@ -4,7 +4,15 @@ head{
 }
 h1{
     color:blue;
-    font-size:20px;
+    font-size:25px;
     text-align:center;
     font-style:italic;
+}
+body{
+    background-color:skyblue;
+    display:inline;
+}
+p{
+    font-size:20px;
+    text-align:center;
 }
