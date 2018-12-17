@@ -5,7 +5,7 @@
 this project is concerning to triangl where the triangle is going to be explained . in this we  will see the typpes of triangle"equlateral;isoscels;and scane triangle" The sides of triangle will also described.                                              
 ## Setup/Installation Requirements
 * The reqwirements will be used are including the following:
-* intrnet
+* internet link Emima77.github.io/essesment
 * google
 * mathematical set
 ## Known Bugs
