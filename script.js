@@ -1,28 +1,31 @@
-function outputmessage() {
+function  outputmessage() {
     var firstNumber=parseInt(document.getElementById("firstvalue").value);
     var secondNumber=parseInt(document.getElementById("secondvalue").value);
     var thirdNumber=parseInt(document.getElementById("thirdvalue").value);
-    var tex;
+    var text;
+    var array =[firstNumber,secondNumber,thirdNumber];
+    //if for intering positive value with 3sides
+
     if(firstNumber <=0 || secondNumber<=0|| thirdNumber<0){
         text="A triangle must have 3 sides with positiv definate lenght!";
     }
-    else if(firstNumber + secondNumber <= thirdNumber &&
+    if(
+        (firstNumber + secondNumber <= thirdNumber &&
         secondNumber + firstNumber<=thirdNumber)||
         (firstNumber + thirdNumber <=secondNumber &&
             thirdNumber + firstNumber)||
-            (secondNumber + thirdNumber && thirdNumber + secondNumber <= firstNumber){
+            (secondNumber + thirdNumber<=firstNumber && thirdNumber + secondNumber <= firstNumber)
+            ){
                 
                 text="Not a triangle";
             }
-
-}
 //if triangle is equilateral
 else if(
-    firstNnumber ===secondNumber &&
+    firstNumber ===secondNumber &&
     secondNumber===thirdNumber &&
     thirdNumber===firstNumber
 ){
-    text = "The triangle is equilateral.";
+    text = " equilateral.";
 }
 //if triangle is isosceles
 else if (
@@ -30,7 +33,7 @@ else if (
     secondNumber===thirdNumber ||
     thirdNumber===firstNumber
 ) {
-    text="The triangle is isosceles.";
+    text="isosceles.";
 }
 //if triangle is scalene
 else if(
@@ -38,9 +41,10 @@ else if(
     firstNumber!==thirdNumber &&
     secondNumber!==thirdNumber
 ) {
-    text="Triangle is scalene.";
+    text="scalene.";
+}
     else {
         text="error";
     }
-    document.getElementById("demo")
+    document.getElementById("demo").innerHTML = text;
 }
